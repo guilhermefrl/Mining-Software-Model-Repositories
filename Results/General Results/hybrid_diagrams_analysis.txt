@@ -1,0 +1,16 @@
+Class_Diagram: 80723 78.2935511091%
+Class_Diagram, Use_Case_Diagram: 16442 15.9471596365%
+Class_Diagram, Component_Diagram, Use_Case_Diagram: 2850 2.7642260652%
+Class_Diagram, Object_Diagram: 1098 1.06495446301%
+Class_Diagram, Component_Diagram, Deployment_Diagram, Use_Case_Diagram: 482 0.46749367137%
+Class_Diagram, Object_Diagram, Use_Case_Diagram: 374 0.36274405206%
+Class_Diagram, Component_Diagram, Object_Diagram, Use_Case_Diagram: 299 0.29000126087%
+Class_Diagram, Component_Diagram: 295 0.28612164534%
+Class_Diagram, Component_Diagram, Deployment_Diagram, Object_Diagram, Use_Case_Diagram: 194 0.18816135321%
+Class_Diagram, Deployment_Diagram, Use_Case_Diagram: 130 0.12608750472%
+Class_Diagram, Deployment_Diagram: 88 0.08535154166%
+Class_Diagram, Component_Diagram, Object_Diagram: 63 0.06110394459%
+Class_Diagram, Component_Diagram, Deployment_Diagram: 32 0.03103692424%
+Class_Diagram, Deployment_Diagram, Object_Diagram: 18 0.01745826988%
+Class_Diagram, Component_Diagram, Deployment_Diagram, Object_Diagram: 12 0.01163884659%
+Class_Diagram, Deployment_Diagram, Object_Diagram, Use_Case_Diagram: 3 0.00290971164%
