@@ -65,7 +65,9 @@ def create_histogram_number_of_diagrams_with_n_entities(data):
 
 # Função para o KDE do número de diagramas com n entidades
 def create_kde_number_of_diagrams_with_n_entities(data):
-    entities, diagrams = zip(*data.items())
+    entities = []
+    for key, value in data.items():
+        entities.extend([key] * value)
 
     median_entities = np.median(entities)
     mean_entities = np.mean(entities)
@@ -75,7 +77,7 @@ def create_kde_number_of_diagrams_with_n_entities(data):
     plt.axvline(median_entities, color='orange', linestyle='--', label=f'Median number of entities: {median_entities:.2f}', zorder=2)
     plt.axvline(mean_entities, color='green', linestyle='--', label=f'Average number of entities: {mean_entities:.2f}', zorder=2)
     sns.kdeplot(entities, bw_method=0.5, fill=True, zorder=3)
-    plt.xlabel("Number of Entities")
+    plt.xlabel("Number of entities")
     plt.ylabel("Density")
     plt.legend()
     plt.savefig('kde_number_of_diagrams_with_n_entities.png')
@@ -117,7 +119,9 @@ def create_histogram_number_of_diagrams_with_n_relationships(data):
 
 # Função para o KDE do número de diagramas com n relações
 def create_kde_number_of_diagrams_with_n_relationships(data):
-    relationships, diagrams = zip(*data.items())
+    relationships = []
+    for key, value in data.items():
+        relationships.extend([key] * value)
 
     median_relationships = np.median(relationships)
     mean_relationships = np.mean(relationships)
@@ -127,7 +131,7 @@ def create_kde_number_of_diagrams_with_n_relationships(data):
     plt.axvline(median_relationships, color='orange', linestyle='--', label=f'Median number of relationships: {median_relationships:.2f}', zorder=2)
     plt.axvline(mean_relationships, color='green', linestyle='--', label=f'Average number of relationships: {mean_relationships:.2f}', zorder=2)
     sns.kdeplot(relationships, bw_method=0.5, fill=True, zorder=3)
-    plt.xlabel("Number of Relationships")
+    plt.xlabel("Number of relationships")
     plt.ylabel("Density")
     plt.legend()
     plt.savefig('kde_number_of_diagrams_with_n_relationships.png')
@@ -180,7 +184,7 @@ def create_element_distribution_plot(data):
     plt.figure(figsize=(10, 6))
     plt.bar(elements, counts, zorder=2)
     plt.grid(True, alpha=0.6, axis='y', zorder=1)
-    plt.xlabel('UML Elements')
+    plt.xlabel('UML elements')
     plt.ylabel('Number of elements')
     plt.axis([-1, 19, 0, 2500000])
     plt.xticks(rotation=60, ha='right')

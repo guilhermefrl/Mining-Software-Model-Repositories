@@ -1,0 +1,9 @@
+Visual Expressivenes: 96,382
+Bends in Lines: 51,520
+Intersections: 42,858
+Diagram Size: 39,009
+Dual Coding: 31,776
+Close Lines: 27,835
+Overlapping Elements: 26,772
+Graphic Economy: 10,881
+Perceptual Discriminability: 4,730
