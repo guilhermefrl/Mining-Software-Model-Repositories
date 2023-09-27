@@ -60,6 +60,14 @@ def find_relationships_without_description(root):
                 relationships_without_description += 1
                 break
 
+            lower_value = owned_end.find("./lowerValue")
+            upper_value = owned_end.find("./upperValue")
+
+            if 'value' not in lower_value.attrib or lower_value.attrib["value"] == "" or 'value' not in upper_value.attrib or upper_value.attrib["value"] == "":
+                relationships_without_description += 1
+                break
+
+
     # Verificar as relações do tipo Association Class
     for association_class in root.findall(".//packagedElement[@{http://www.w3.org/2001/XMLSchema-instance}type='uml:AssociationClass']"):
         owned_ends = association_class.findall("./ownedEnd")
